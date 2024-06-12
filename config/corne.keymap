@@ -60,10 +60,10 @@
 					&kp A     &kp S     &kp D     &kp F     &kp G         &kp H     &kp J     &kp K     &kp L     &kp SQT
 			// ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
 			// │    Z    │    X    │    C    │    V    │    B    │   │    N    │    M    │   ,/;   │   ./:   │    /    │
-					&kp Z     &kp X     &kp C     &kp V     &kp B         &kp N     &kp M     &cma_smi  &dot_cln  &kp FSLH
+					&kp Z     &kp X     &kp C     &kp V     &kp B        &kp N     &kp M   &kp KP_COMMA &kp KP_DOT &kp KP_SLASH
 			// ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
 															SECLTHMB  PRMLTHMB  TERLTHMB      TERRTHMB  PRMRTHMB  SECRTHMB
-			//
+			//                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
           >;
     };
     symbols { // layer 1
@@ -79,7 +79,7 @@
 					&kp Z     &kp X     &kp C     &kp V     &kp B        &kp N     &kp M   &kp KP_COMMA &kp KP_DOT &kp KP_SLASH
 			// ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
 															SECLTHMB  PRMLTHMB  TERLTHMB      TERRTHMB  PRMRTHMB  SECRTHMB
-			//
+			//                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
           >;
     };
   };
