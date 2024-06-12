@@ -66,7 +66,7 @@
 				// │    Z    │    X    │    C    │    V    │    B    │   │    N    │    M    │   ,/;   │   ./:   │    /    │
 			&none	&kp Z     &kp X     &kp C     &kp V     &kp B        &kp N     &kp M   		&com_col &kp KP_DOT &kp KP_SLASH	&none
 				// ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
-																CL2  			CL1  			CL0      			CR0  			CR1  		CR2
+									&mt LCTRL ESC &mt LGUI TAB &mt SHIFT BSPC    	 &mt SHIFT SPACE &mt LGUI ENTER &lt 1 ESC
 				//                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
 				>;
 			};
@@ -88,5 +88,4 @@
 				>;
 			};
 		};
-	};
-
+};
