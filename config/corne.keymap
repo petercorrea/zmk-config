@@ -42,7 +42,9 @@
 // #define HRMR(k1, k2, k3, k4) &hmr RGUI k1 &hmr RALT k2 &hmr RCTRL k3 &hmr RSHFT k4
 
 / {
-  chosen { zmk, matrix_transform = &five_column_transform; };
+  chosen {
+		zmk, matrix_transform = &five_column_transform;
+	};
 };
 
 / {
