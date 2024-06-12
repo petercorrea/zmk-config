@@ -9,16 +9,16 @@
 
 // layers
 #define DEF 0
-#define NUM 1
+#define SYM 1
 
 // Layer switching
-#define CL0 &mt NUM LSHIFT // tap for sticky shift : hold for media layer
-#define CL1 &mt NUM 0 //  zero here because key-repeat does not take arguments
-#define CL2 &mt LSHIFT TAB //   tap for tab : hold for shift
+#define CL2 &mt LCTRL ESC //   tap for tab : hold for shift
+#define CL1 &mt LGUI TAB //  zero here because key-repeat does not take arguments
+#define CL0 &mt SHIFT BSPC // tap for sticky shift : hold for media layer
 
-#define CR0 &mt NUM SPACE
-#define CR1 &mt RC(BSPC) BSPC // tap gives you backspace : long tap gives you delete word
-#define CR2 &mt NUM RCTRL //  tap for sticky ctrl : hold for function layer
+#define CR0 &mt SHIFT SPACE
+#define CR1 &mt LGUI ENTER // tap gives you backspace : long tap gives you delete word
+#define CR2 &lt 1 ESC //  tap for sticky ctrl : hold for function layer
 
 // shorter codes
 #define BPSTE &kp K_PASTE
@@ -48,6 +48,17 @@
 };
 
 / {
+    behaviors {
+        com_col: com_col {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp KP_COMMA>, <&kp COLON>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+};
+
+/ {
   keymap {
     compatible = "zmk,keymap";
     qwerty { // layer 0 (default)
@@ -60,7 +71,7 @@
 					&kp A     &kp S     &kp D     &kp F     &kp G         &kp H     &kp J     &kp K     &kp L     &kp SQT
 			// ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
 			// │    Z    │    X    │    C    │    V    │    B    │   │    N    │    M    │   ,/;   │   ./:   │    /    │
-					&kp Z     &kp X     &kp C     &kp V     &kp B        &kp N     &kp M   &kp KP_COMMA &kp KP_DOT &kp KP_SLASH
+					&kp Z     &kp X     &kp C     &kp V     &kp B        &kp N     &kp M   		&com_col &kp KP_DOT &kp KP_SLASH
 			// ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
 															CL2  			CL1  			CL0      			CR0  			CR1  		CR2
 			//                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
