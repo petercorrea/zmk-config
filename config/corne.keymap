@@ -12,13 +12,13 @@
 #define NUM 1
 
 // Layer switching
-#define SECLTHMB &ltsk NUM LSHIFT // tap for sticky shift : hold for media layer
-#define PRMLTHMB &ltr NUM 0 //  zero here because key-repeat does not take arguments
+#define SECLTHMB &mt NUM LSHIFT // tap for sticky shift : hold for media layer
+#define PRMLTHMB &mt NUM 0 //  zero here because key-repeat does not take arguments
 #define TERLTHMB &mt LSHIFT TAB //   tap for tab : hold for shift
 
-#define TERRTHMB &lt NUM SPACE
+#define TERRTHMB &mt NUM SPACE
 #define PRMRTHMB &mt RC(BSPC) BSPC // tap gives you backspace : long tap gives you delete word
-#define SECRTHMB &ltsk NUM RCTRL //  tap for sticky ctrl : hold for function layer
+#define SECRTHMB &mt NUM RCTRL //  tap for sticky ctrl : hold for function layer
 
 // shorter codes
 #define BPSTE &kp K_PASTE
@@ -69,11 +69,11 @@
     symbols { // layer 1
       bindings = <
       // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
-			// │    Q    │    W    │    E    │    R    │    T    │   │    Y    │    U    │    I    │    O    │    P    │
+			// │    Q    │    W    │    E    │    R    │    T    │   │    {    │    }    │    I    │    O    │    P    │
 					&kp Q     &kp W     &kp E     &kp R     &kp T         &kp Y     &kp U     &kp I     &kp O     &kp P
 			// ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
-			// │    A    │    S    │    D    │    F    │    G    │   │    H    │    J    │    K    │    L    │    '    │
-					&kp A     &kp S     &kp D     &kp F     &kp G         &kp H     &kp J     &kp K     &kp L     &kp SQT
+			// │    A    │    S    │    D    │    F    │    G    │   │    (    │    )    │    K    │    L    │    '    │
+					&kp A     &kp S     &kp D     &kp F     &kp G        &kp LPAR  &kp RPAR   &kp K     &kp L     &kp SQT
 			// ├─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────┤
 			// │    Z    │    X    │    C    │    V    │    B    │   │    N    │    M    │   ,     │   .     │    /    │
 					&kp Z     &kp X     &kp C     &kp V     &kp B        &kp N     &kp M   &kp KP_COMMA &kp KP_DOT &kp KP_SLASH
