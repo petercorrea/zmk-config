@@ -43,14 +43,13 @@
 
 / {
   chosen {
-		zmk, matrix_transform = &five_column_transform;
+		zmk,matrix_transform = &five_column_transform;
 	};
 };
 
 / {
   keymap {
     compatible = "zmk,keymap";
-
     qwerty { // layer 0 (default)
       bindings = <
       // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
@@ -67,7 +66,6 @@
 			//
           >;
     };
-
     symbols { // layer 1
       bindings = <
       // ╭─────────────────────────────────────────────────╮   ╭─────────────────────────────────────────────────╮
