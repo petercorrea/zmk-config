@@ -12,13 +12,13 @@
 #define NUM 1
 
 // Layer switching
-#define SECLTHMB &mt NUM LSHIFT // tap for sticky shift : hold for media layer
-#define PRMLTHMB &mt NUM 0 //  zero here because key-repeat does not take arguments
-#define TERLTHMB &mt LSHIFT TAB //   tap for tab : hold for shift
+#define CL0 &mt NUM LSHIFT // tap for sticky shift : hold for media layer
+#define CL1 &mt NUM 0 //  zero here because key-repeat does not take arguments
+#define CL2 &mt LSHIFT TAB //   tap for tab : hold for shift
 
-#define TERRTHMB &mt NUM SPACE
-#define PRMRTHMB &mt RC(BSPC) BSPC // tap gives you backspace : long tap gives you delete word
-#define SECRTHMB &mt NUM RCTRL //  tap for sticky ctrl : hold for function layer
+#define CR0 &mt NUM SPACE
+#define CR1 &mt RC(BSPC) BSPC // tap gives you backspace : long tap gives you delete word
+#define CR2 &mt NUM RCTRL //  tap for sticky ctrl : hold for function layer
 
 // shorter codes
 #define BPSTE &kp K_PASTE
@@ -62,7 +62,7 @@
 			// │    Z    │    X    │    C    │    V    │    B    │   │    N    │    M    │   ,/;   │   ./:   │    /    │
 					&kp Z     &kp X     &kp C     &kp V     &kp B        &kp N     &kp M   &kp KP_COMMA &kp KP_DOT &kp KP_SLASH
 			// ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
-															SECLTHMB  PRMLTHMB  TERLTHMB      TERRTHMB  PRMRTHMB  SECRTHMB
+															CL2  			CL1  			CL0      			CR0  			CR1  		CR2
 			//                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
           >;
     };
@@ -78,7 +78,7 @@
 			// │    Z    │    X    │    C    │    V    │    B    │   │    N    │    M    │   ,     │   .     │    /    │
 					&kp Z     &kp X     &kp C     &kp V     &kp B        &kp N     &kp M   &kp KP_COMMA &kp KP_DOT &kp KP_SLASH
 			// ╰─────────┼─────────┼─────────┼─────────┼─────────┤   ├─────────┼─────────┼─────────┼─────────┼─────────╯
-															SECLTHMB  PRMLTHMB  TERLTHMB      TERRTHMB  PRMRTHMB  SECRTHMB
+															CL2  			CL1  			CL0      			CR0  			CR1  		CR2
 			//                     ╰─────────────────────────────╯   ╰─────────────────────────────╯
           >;
     };
