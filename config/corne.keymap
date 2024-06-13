@@ -100,12 +100,31 @@
 
         sym_layer { // layer 3
             bindings = <
-            &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
-            &none       &none       &none       &none       &none       &none       &none       &kp LPAR    &kp RPAR    &none       &none       &none
-            &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
+            &none       &none       &none       &none       &none       &none       &kp QMARK       &kp LBRC        &kp RBRC        &kp AMPS        &kp PIPE        &none
+            &none       &none       &none       &none       &none       &none       &kp EQUAL       &kp LPAR        &kp RPAR        &LBKT           &RBKT           &none
+            &none       &none       &none       &none       &none       &none       &kp EXCL        &kp LT          &kp GT          &kp TILDE       &kp CARET       &none
             &none       &none       &none       &none       &none       &none
             >;
         };
+
+        nums_layer { // layer 4
+            bindings = <
+            &none       &none       &none       &none       &none       &none       &kp MINUS       &kp N7       &kp N8       &kp N9       &kp SLASH    &none
+            &none       &none       &none       &none       &none       &none       &kp PLUS        &kp N4       &kp N5       &kp N6       &kp STAR     &none
+            &none       &none       &none       &none       &none       &none       &kp N0          &kp N1       &kp N2       &kp N3       &none        &none
+            &none       &none       &none       &none       &none       &none
+            >;
+        };
+
+
+        // blank_layer { // layer 4
+        //     bindings = <
+        //     &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
+        //     &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
+        //     &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
+        //     &none       &none       &none       &none       &none       &none
+        //     >;
+        // };
 
         // prog_layer {
         //     bindings = <
