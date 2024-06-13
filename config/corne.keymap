@@ -24,10 +24,10 @@
 #define CR2 &mt RCTRL       ESC
 
 // Arrow keys
-#define LTAW &mt &key_repeat LEFT_ARROW
-#define DNAW &mt &key_repeat DOWN_ARROW
-#define UPAW &mt &key_repeat UP_ARROW
-#define RTAW &mt &key_repeat RIGHT_ARROW
+#define LTAW &kp LEFT_ARROW
+#define DNAW &kp DOWN_ARROW
+#define UPAW &kp UP_ARROW
+#define RTAW &kp RIGHT_ARROW
 
 &mt {
     tapping-term-ms = <400>;
@@ -105,7 +105,7 @@
             &none                   &kp LG(Q)           &kp LG(W)                   &none                   &none                   &none           &none       &none   &none   &none   &kp LG(P)   &none
             &none                   &kp LG(A)           &kp LG(S)                   &none                   &none                   &none           &none       LTAW    DNAW    UPAW    RTAW        &none
             &none                   &kp LG(Z)           &kp LG(X)                   &mt LC(C) LG(C)         &kp LG(V)               &none           &none       &none   &none   &none   &none       &none
-            &kp LCTRL               &kp LALT            &kp LGUI                    &kp SPACE               &kp DELETE              &kp LEFT_SHIFT
+            &kp LCTRL               &kp LALT            &kp LGUI                    &kp SPACE               &kp BACKSPACE           &kp LEFT_SHIFT
             >;
         };
 
