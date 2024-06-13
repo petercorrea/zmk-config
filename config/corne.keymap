@@ -21,7 +21,7 @@
     flavor = "balanced";
 };
 
-&kp {
+&lt {
     tapping-term-ms = <400>;
 };
 
