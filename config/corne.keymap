@@ -23,6 +23,11 @@
 #define CR1 &mt RIGHT_GUI   RETURN
 #define CR2 &mt RCTRL       ESC
 
+// Arrow keys
+#define LTAW &key_repeat LEFT_ARROW
+#define DNAW &key_repeat DOWN_ARROW
+#define UPAW &key_repeat UP_ARROW
+#define RTAW &key_repeat RIGHT_ARROW
 
 &mt {
     tapping-term-ms = <400>;
@@ -91,9 +96,9 @@
 
         nav_layer { // layer 2
             bindings = <
-            &none                   &kp LG(Q)           &kp LG(W)                   &none                   &none                   &none               &none       &none   &none                   &none                       &kp LG(P)                   &none
-            &none                   &kp LG(A)           &kp LG(S)                   &none                   &none                   &none               &none       &mt     &key_repeat LEFT_ARROW  &mt &key_repeat DOWN_ARROW  &mt &key_repeat UP_ARROW    &mt &key_repeat RIGHT_ARROW     &none
-            &none                   &kp LG(Z)           &kp LG(X)                   &mt LC(C) LG(C)         &kp LG(V)               &none               &none       &none   &none                   &none                        &none                      &none
+            &none                   &kp LG(Q)           &kp LG(W)                   &none                   &none                   &none               &none       &none   &none   &none   &kp LG(P)   &none
+            &none                   &kp LG(A)           &kp LG(S)                   &none                   &none                   &none               &none       LTAW    DNAW    UPAW    RTAW        &none
+            &none                   &kp LG(Z)           &kp LG(X)                   &mt LC(C) LG(C)         &kp LG(V)               &none               &none       &none   &none   &none   &none       &none
             &kp LCTRL               &kp LALT            &kp LGUI                    &kp SPACE               &kp DELETE              &kp LEFT_SHIFT
             >;
         };
