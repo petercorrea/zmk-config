@@ -29,14 +29,14 @@
     combos {
         compatible = "zmk,combos";
 
-        toogle_qwerty {
-            timeout-ms = <50>;
+        toggle_qwerty {
+            timeout-ms = <500>;
             bindings = <&tog QWE>;
             key-positions = <13 14 15 16 19>;
         };
 
-        toogle_colemak {
-            timeout-ms = <50>;
+        toggle_colemak {
+            timeout-ms = <500>;
             bindings = <&tog COL>;
             key-positions = <13 14 15 16 20>;
         };
