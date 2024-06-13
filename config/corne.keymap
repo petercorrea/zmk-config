@@ -24,10 +24,10 @@
 #define CR2 &mt RCTRL       ESC
 
 // Arrow keys
-#define LTAW LEFT_ARROW
-#define DNAW DOWN_ARROW
-#define UPAW UP_ARROW
-#define RTAW RIGHT_ARROW
+#define LTAW &kp LEFT_ARROW
+#define DNAW &kp DOWN_ARROW
+#define UPAW &kp UP_ARROW
+#define RTAW &kp RIGHT_ARROW
 
 &mt {
     tapping-term-ms = <400>;
