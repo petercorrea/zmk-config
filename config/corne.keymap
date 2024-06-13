@@ -23,6 +23,7 @@
 #define CR1 &mt RIGHT_GUI   TAB
 #define CR2 &mt RCTRL       ESC
 
+
 &mt {
     tapping-term-ms = <400>;
     quick-tap-ms = <175>;
@@ -48,6 +49,12 @@
             timeout-ms = <500>;
             bindings = <&tog 1>;
             key-positions = <15 16>;
+        };
+
+        left {
+            timeout-ms = <500>;
+            bindings = <&kp LEFT>;
+            key-positions = <37 19>;
         };
     };
 
