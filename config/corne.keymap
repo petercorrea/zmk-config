@@ -30,11 +30,13 @@
         compatible = "zmk,combos";
 
         toogle_qwerty {
+            timeout-ms = <50>;
             bindings = <&tog 0>;
             key-positions = <13 14 15 16 19>;
         };
 
         toogle_colemak {
+            timeout-ms = <50>;
             bindings = <&tog 1>;
             key-positions = <13 14 15 16 20>;
         };
