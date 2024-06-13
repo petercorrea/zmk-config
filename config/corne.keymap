@@ -40,16 +40,19 @@
     tapping-term-ms = <400>;
 };
 
-/ {
-    behaviors {
-        repeat_press {
-            label = "Repeat on hold";
-            delay-ms = <500>; // Initial delay before repeating starts
-            period-ms = <100>; // Time between repeats
-            compatible = "zmk,behavior-repeat";
-        };
-    };
+// / {
+//     behaviors {
+//         repeat_press {
+//             label = "Repeat on hold";
+//             delay-ms = <500>; // Initial delay before repeating starts
+//             period-ms = <100>; // Time between repeats
+//             compatible = "zmk,behavior-repeat";
+//         };
+//     };
+// }
 
+
+/ {
     combos {
         compatible = "zmk,combos";
 
