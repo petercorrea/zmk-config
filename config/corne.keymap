@@ -87,8 +87,8 @@
             bindings = <
             &none               &none               &none                       &none                   &none                   &none               &none       &none               &none           &none           &none               &none
             &none               &none               &none                       &none                   &none                   &none               &none       &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW     &none
-            &none               &none               &none                       &none                   &none                   &none               &none       &none               &none           &none           &none               &none
-            &mt LCTRL ESC       &mt LEFT_GUI TAB    &mt LEFT_SHIFT BACKSPACE    &mt RIGHT_SHIFT SPACE   &mt RIGHT_GUI TAB       &mt RCTRL RETURN
+            &none               &none               &none                       &kp C(LCTRL)            &kp V(LCTRL)            &none               &none       &none               &none           &none           &none               &none
+            &kp LCTRL           &kp LGUI            &kp LEFT_SHIFT              &kp DEL
             >;
         };
 
