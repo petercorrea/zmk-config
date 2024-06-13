@@ -14,6 +14,15 @@
 #define MED 3
 #define BT  4
 
+// Controls Alias
+#define CL2 &mt LCTRL       ESC
+#define CL1 &mt LEFT_GUI    BACKSPACE
+#define CL0 &mt LEFT_SHIFT  SPACE
+
+#define CR0 &mt RIGHT_SHIFT RETURN
+#define CR1 &mt RIGHT_GUI   TAB
+#define CR2 &mt RCTRL       ESC
+
 &mt {
     tapping-term-ms = <400>;
     quick-tap-ms = <175>;
@@ -54,7 +63,7 @@
             &none           &kp Q               &kp W                       &kp E                   &kp R                   &kp T               &kp Y       &kp U       &kp I       &kp O       &kp P       &none
             &none           &kp A               &kp S                       &kp D                   &kp F                   &kp G               &kp H       &kp J       &kp K       &kp L       &kp SEMI    &none
             &none           &kp Z               &kp X                       &kp C                   &kp V                   &kp B               &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &none
-            &mt LCTRL ESC   &mt LEFT_GUI TAB    &mt LEFT_SHIFT SPACE        &mt RIGHT_SHIFT RETURN  &mt RIGHT_GUI TAB       &mt RCTRL BACKSPACE
+            CL2             CL1                 CL0                         CR0                     CR1                     CR2
             >;
         };
 
