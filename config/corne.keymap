@@ -40,19 +40,19 @@
         compatible = "zmk,combos";
 
         toggle_qwerty {
-            timeout-ms = <500>;
+            timeout-ms = <50>;
             bindings = <&tog 0>;
             key-positions = <13 14>;
         };
 
         toggle_colemak {
-            timeout-ms = <500>;
+            timeout-ms = <50>;
             bindings = <&tog 1>;
             key-positions = <14 15>;
         };
 
         toggle_nav {
-            timeout-ms = <500>;
+            timeout-ms = <50>;
             bindings = <&tog 2>;
             key-positions = <15 16>;
         };
