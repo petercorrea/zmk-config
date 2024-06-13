@@ -31,13 +31,13 @@
 
         toggle_qwerty {
             timeout-ms = <500>;
-            bindings = <&tog QWE>;
+            bindings = <&tog 0>;
             key-positions = <13 14 15 16 19>;
         };
 
         toggle_colemak {
             timeout-ms = <500>;
-            bindings = <&tog COL>;
+            bindings = <&tog 1>;
             key-positions = <13 14 15 16 20>;
         };
     };
