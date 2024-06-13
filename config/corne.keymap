@@ -24,10 +24,10 @@
 #define CR2 &mt RCTRL       ESC
 
 // Arrow keys
-#define LTAW &kp LEFT_ARROW
-#define DNAW &kp DOWN_ARROW
-#define UPAW &kp UP_ARROW
-#define RTAW &kp RIGHT_ARROW
+#define LTAW &repeat LEFT_ARROW
+#define DNAW &repeat DOWN_ARROW
+#define UPAW &repeat UP_ARROW
+#define RTAW &repeat RIGHT_ARROW
 
 &mt {
     tapping-term-ms = <400>;
@@ -40,16 +40,16 @@
     tapping-term-ms = <400>;
 };
 
-// / {
-//     behaviors {
-//         repeat_press {
-//             label = "Repeat on hold";
-//             delay-ms = <500>; // Initial delay before repeating starts
-//             period-ms = <100>; // Time between repeats
-//             compatible = "zmk,behavior-repeat";
-//         };
-//     };
-// }
+/ {
+    behaviors {
+        repeat_press {
+            label = "Repeat on hold";
+            delay-ms = <500>; // Initial delay before repeating starts
+            period-ms = <100>; // Time between repeats
+            compatible = "zmk,behavior-repeat";
+        };
+    };
+}
 
 
 / {
