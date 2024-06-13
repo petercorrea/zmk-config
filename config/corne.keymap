@@ -32,13 +32,13 @@
         toggle_qwerty {
             timeout-ms = <500>;
             bindings = <&tog 0>;
-            key-positions = <13 14 15 16 19>;
+            key-positions = <13 14>;
         };
 
         toggle_colemak {
             timeout-ms = <500>;
             bindings = <&tog 1>;
-            key-positions = <13 14 15 16 20>;
+            key-positions = <15 16>;
         };
     };
 
@@ -54,7 +54,7 @@
             &none           &kp Q               &kp W                       &kp E                   &kp R                   &kp T               &kp Y       &kp U       &kp I       &kp O       &kp P       &none
             &none           &kp A               &kp S                       &kp D                   &kp F                   &kp G               &kp H       &kp J       &kp K       &kp L       &kp SEMI    &none
             &none           &kp Z               &kp X                       &kp C                   &kp V                   &kp B               &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &none
-            &mt LCTRL ESC   &mt LEFT_GUI TAB    &mt LEFT_SHIFT BACKSPACE    &mt RIGHT_SHIFT SPACE   &mt RIGHT_GUI TAB       &mt RCTRL RETURN
+            &mt LCTRL ESC   &mt LEFT_GUI TAB    &mt LEFT_SHIFT SPACE        &mt RIGHT_SHIFT RETURN  &mt RIGHT_GUI TAB       &mt RCTRL BACKSPACE
             >;
         };
 
