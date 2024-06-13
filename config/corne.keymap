@@ -21,7 +21,7 @@
     flavor = "balanced";
 };
 
-&lt {
+&kp {
     tapping-term-ms = <400>;
 };
 
@@ -51,7 +51,7 @@
             bindings = <
             &none           &kp Q               &kp W                       &kp E                   &kp R                   &kp T               &kp Y       &kp U       &kp I       &kp O       &kp P       &none
             &none           &kp A               &kp S                       &kp D                   &kp F                   &kp G               &kp H       &kp J       &kp K       &kp L       &kp SEMI    &none
-            &none           &lt QWE Z           &lt COL X                   &kp C                   &kp V                   &kp B               &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &none
+            &none           &kp Z               &kp X                       &kp C                   &kp V                   &kp B               &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &none
             &mt LCTRL ESC   &mt LEFT_GUI TAB    &mt LEFT_SHIFT BACKSPACE    &mt RIGHT_SHIFT SPACE   &mt RIGHT_GUI TAB       &mt RCTRL RETURN
             >;
         };
@@ -60,7 +60,7 @@
             bindings = <
             &none               &kp Q               &kp W                       &kp F                   &kp P                   &kp B               &kp J   &kp L   &kp U       &kp Y       &kp SEMICOLON   &none
             &none               &kp A               &kp R                       &kp S                   &kp T                   &kp G               &kp M   &kp N   &kp E       &kp I       &kp O           &none
-            &none               &lt QWE X           &lt COL C                   &kp D                   &kp V                   &kp Z               &kp K   &kp K   &kp COMMA   &kp DOT     &kp FSLH        &none
+            &none               &kp X               &kp C                       &kp D                   &kp V                   &kp Z               &kp K   &kp K   &kp COMMA   &kp DOT     &kp FSLH        &none
             &mt LCTRL ESC       &mt LEFT_GUI TAB    &mt LEFT_SHIFT BACKSPACE    &mt RIGHT_SHIFT SPACE   &mt RIGHT_GUI TAB       &mt RCTRL RETURN
             >;
         };
