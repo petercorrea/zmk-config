@@ -17,10 +17,10 @@
 // Controls Alias
 #define CL2 &mt LCTRL       ESC
 #define CL1 &mt LEFT_GUI    BACKSPACE
-#define CL0 &mt LEFT_SHIFT  SPACE
+#define CL0 &mt LEFT_SHIFT  TAB
 
-#define CR0 &mt RIGHT_SHIFT RETURN
-#define CR1 &mt RIGHT_GUI   TAB
+#define CR0 &mt RIGHT_SHIFT SPACE
+#define CR1 &mt RIGHT_GUI   RETURN
 #define CR2 &mt RCTRL       ESC
 
 
@@ -85,7 +85,7 @@
 
         nav_layer { // layer 2
             bindings = <
-            &kp LG(Q)               &none               &none                       &none                   &none                   &none               &none       &none               &none           &none           &kp LG(P)           &none
+            &none                   &kp LG(Q)           &kp LG(W)                   &none                   &none                   &none               &none       &none               &none           &none           &kp LG(P)           &none
             &none                   &kp LG(A)           &kp LG(S)                   &none                   &none                   &none               &none       &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW     &none
             &none                   &none               &kp LC(C)                   &kp LG(C)               &kp LG(V)               &none               &none       &none               &none           &none           &none               &none
             &kp LALT                &kp LGUI            &kp LEFT_SHIFT              &kp DEL                 &none                   &none
