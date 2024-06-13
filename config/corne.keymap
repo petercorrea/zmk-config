@@ -93,8 +93,8 @@
             bindings = <
             &none                   &kp LG(Q)           &kp LG(W)                   &none                   &none                   &none               &none       &none               &none           &none           &kp LG(P)           &none
             &none                   &kp LG(A)           &kp LG(S)                   &none                   &none                   &none               &none       &kp LEFT_ARROW      &kp DOWN_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW     &none
-            &none                   &none               &kp LC(C)                   &kp LG(C)               &kp LG(V)               &none               &none       &none               &none           &none           &none               &none
-            &kp LALT                &kp LGUI            &kp LEFT_SHIFT              &kp RETURN              &kp DELETE              &none
+            &none                   &kp LG(Z)           &kp LG(X)                   &mt LC(C) LG(C)         &kp LG(V)               &none               &none       &none               &none           &none           &none               &none
+            &kp LCTRL               &kp LALT            &kp LGUI                    &kp SPACE               &kp DELETE              &kp LEFT_SHIFT
             >;
         };
 
