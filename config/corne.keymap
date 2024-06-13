@@ -41,6 +41,15 @@
 };
 
 / {
+    behaviors {
+        repeat_press {
+            label = "Repeat on hold";
+            delay-ms = <500>; // Initial delay before repeating starts
+            period-ms = <100>; // Time between repeats
+            compatible = "zmk,behavior-repeat";
+        };
+    };
+
     combos {
         compatible = "zmk,combos";
 
@@ -66,6 +75,12 @@
             timeout-ms = <50>;
             bindings = <&mo 3>;
             key-positions = <3 4>;
+        };
+
+        toggle_nums {
+            timeout-ms = <50>;
+            bindings = <&mo 4>;
+            key-positions = <2 3>;
         };
     };
 
@@ -96,9 +111,9 @@
 
         nav_layer { // layer 2
             bindings = <
-            &none                   &kp LG(Q)           &kp LG(W)                   &none                   &none                   &none               &none       &none   &none   &none   &kp LG(P)   &none
-            &none                   &kp LG(A)           &kp LG(S)                   &none                   &none                   &none               &none       LTAW    DNAW    UPAW    RTAW        &none
-            &none                   &kp LG(Z)           &kp LG(X)                   &mt LC(C) LG(C)         &kp LG(V)               &none               &none       &none   &none   &none   &none       &none
+            &none                   &kp LG(Q)           &kp LG(W)                   &none                   &none                   &none           &none       &none   &none   &none   &kp LG(P)   &none
+            &none                   &kp LG(A)           &kp LG(S)                   &none                   &none                   &none           &none       LTAW    DNAW    UPAW    RTAW        &none
+            &none                   &kp LG(Z)           &kp LG(X)                   &mt LC(C) LG(C)         &kp LG(V)               &none           &none       &none   &none   &none   &none       &none
             &kp LCTRL               &kp LALT            &kp LGUI                    &kp SPACE               &kp DELETE              &kp LEFT_SHIFT
             >;
         };
