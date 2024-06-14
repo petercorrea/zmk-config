@@ -8,19 +8,18 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 
-#define QWE 0
-#define COL 1
-#define PRO 2
-#define MED 3
-#define BT  4
+#define COL 0
+#define NAV 1
+#define SYM 2
+#define NUM 3
 
 // Controls Alias
-#define CL2 &mt LCTRL       ESC
-#define CL1 &mt LEFT_GUI    BACKSPACE
-#define CL0 &mt LEFT_SHIFT  TAB
+#define CL2 &mt LCTRL ESC
+#define CL1 &mt LALT  BACKSPACE
+#define CL0 &mt LGUI  TAB
 
-#define CR0 &mt RIGHT_SHIFT SPACE
-#define CR1 &mt RIGHT_GUI   RETURN
+#define CR0 &mt RGUI        SPACE
+#define CR1 &mt RIGHT_SHIFT RETURN
 #define CR2 &mt RCTRL       ESC
 
 // Arrow keys
@@ -44,33 +43,27 @@
     combos {
         compatible = "zmk,combos";
 
-        toggle_qwerty {
-            timeout-ms = <50>;
-            bindings = <&tog 0>;
-            key-positions = <13 14>;
-        };
-
         toggle_colemak {
             timeout-ms = <50>;
-            bindings = <&tog 1>;
+            bindings = <&tog COL>;
             key-positions = <14 15>;
         };
 
         toggle_nav {
             timeout-ms = <50>;
-            bindings = <&tog 2>;
+            bindings = <&tog NAV>;
             key-positions = <15 16>;
         };
 
         toggle_sym {
             timeout-ms = <50>;
-            bindings = <&mo 3>;
+            bindings = <&mo SYM>;
             key-positions = <3 4>;
         };
 
         toggle_nums {
             timeout-ms = <50>;
-            bindings = <&mo 4>;
+            bindings = <&mo NUM>;
             key-positions = <2 3>;
         };
     };
@@ -82,16 +75,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        qwerty_layer { // layer 0
-            bindings = <
-            &none           &kp Q               &kp W                       &kp E                   &kp R                   &kp T               &kp Y       &kp U       &kp I       &kp O       &kp P       &none
-            &none           &kp A               &kp S                       &kp D                   &kp F                   &kp G               &kp H       &kp J       &kp K       &kp L       &kp SEMI    &none
-            &none           &kp Z               &kp X                       &kp C                   &kp V                   &kp B               &kp N       &kp M       &kp COMMA   &kp DOT     &kp FSLH    &none
-            CL2             CL1                 CL0                         CR0                     CR1                     CR2
-            >;
-        };
-
-        colemak_layer { // layer 1
+        colemak_layer {
             bindings = <
             &none               &kp Q               &kp W                       &kp F                   &kp P                   &kp B               &kp J   &kp L   &kp U       &kp Y       &kp SEMICOLON   &none
             &none               &kp A               &kp R                       &kp S                   &kp T                   &kp G               &kp M   &kp N   &kp E       &kp I       &kp O           &none
@@ -100,16 +84,16 @@
             >;
         };
 
-        nav_layer { // layer 2
+        nav_layer {
             bindings = <
             &none                   &kp LG(Q)           &kp LG(W)                   &none                   &none                   &none           &none       &none   &none   &none   &kp LG(P)   &none
             &none                   &kp LG(A)           &kp LG(S)                   &none                   &none                   &none           &none       LTAW    DNAW    UPAW    RTAW        &none
             &none                   &kp LG(Z)           &kp LG(X)                   &mt LC(C) LG(C)         &kp LG(V)               &none           &none       &none   &none   &none   &none       &none
-            &kp LCTRL               &kp LALT            &kp LGUI                    &kp SPACE               &kp BACKSPACE           &kp LEFT_SHIFT
+            CL2                     CL1                 CL0                         CR0                     CR1                     CR2
             >;
         };
 
-        sym_layer { // layer 3
+        sym_layer {
             bindings = <
             &none       &none       &none       &none       &none       &none       &kp QMARK       &kp LBRC        &kp RBRC        &kp AMPS        &kp PIPE        &none
             &none       &none       &none       &none       &none       &none       &kp EQUAL       &kp LPAR        &kp RPAR        &kp LBKT        &kp RBKT        &none
@@ -118,7 +102,7 @@
             >;
         };
 
-        nums_layer { // layer 4
+        nums_layer {
             bindings = <
             &none       &none       &none       &none       &none       &none       &kp MINUS       &kp N7       &kp N8       &kp N9       &kp SLASH    &none
             &none       &none       &none       &none       &none       &none       &kp PLUS        &kp N4       &kp N5       &kp N6       &kp STAR     &none
@@ -127,8 +111,7 @@
             >;
         };
 
-
-        // blank_layer { // layer 4
+        // blank_layer {
         //     bindings = <
         //     &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
         //     &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
@@ -137,12 +120,21 @@
         //     >;
         // };
 
-        // prog_layer {
+         // blank_layer {
         //     bindings = <
-        //     &none   &kp N1         &kp N2     &kp N3     &kp N4     &kp N5          &kp LESS_THAN     &kp LEFT_BRACKET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp SEMICOLON  &none
-        //     &none   &kp NUMBER_6   &kp N7     &kp N8     &kp N9     &kp NUMBER_0    &kp LEFT          &kp DOWN           &kp UP           &kp RIGHT              &kp SQT        &none
-        //     &none   &kp BACKSLASH  &kp MINUS  &kp EQUAL  &kp SLASH  &kp ASTERISK    &kp GREATER_THAN  &kp RIGHT_BRACKET  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp GRAVE      &none
-        //     &none   &none      &none           &none             &none              &none
+        //     &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
+        //     &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
+        //     &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
+        //     &none       &none       &none       &none       &none       &none
+        //     >;
+        // };
+
+         // blank_layer {
+        //     bindings = <
+        //     &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
+        //     &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
+        //     &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none       &none
+        //     &none       &none       &none       &none       &none       &none
         //     >;
         // };
 
