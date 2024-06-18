@@ -1,4 +1,10 @@
-on: [push, pull_request, workflow_dispatch]
+on:
+  push:
+    branches:
+      - custom  # Specify only the 'dev' branch
+  pull_request:
+    branches:
+      - custom  # Specify only the 'dev' branch
 
 jobs:
   build:
