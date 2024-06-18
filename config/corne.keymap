@@ -96,7 +96,7 @@
         sym_layer {
             bindings = <
             &none       &none       &none       &none       &none       &none       &kp QMARK       &kp LBRC        &kp RBRC        &kp AMPS        &kp PIPE        &none
-            &none       &none       &none       &none       &none       &none       &kp EQUAL       &mt UNDER LPAR  &kmt MINUS RPAR &kp LBKT        &kp RBKT        &none
+            &none       &none       &none       &none       &none       &none       &kp EQUAL       &mt UNDER LPAR  &mt MINUS RPAR  &kp LBKT        &kp RBKT        &none
             &none       &none       &none       &none       &none       &none       &kp EXCL        &kp LT          &kp GT          &kp TILDE       &kp CARET       &none
             CL2         CL1         CL0         CR0         CR1         CR2
             >;
