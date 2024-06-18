@@ -66,13 +66,6 @@
             bindings = <&mo NUM>;
             key-positions = <2 3>;
         };
-
-        underscore {
-            timeout-ms = <50>;
-            bindings = <&kp UNDERSCORE>;
-            key-positions = <16>;
-            layers = <SYM>;
-        };
     };
 
     conditional_layers {
@@ -103,7 +96,7 @@
         sym_layer {
             bindings = <
             &none       &none       &none       &none       &none       &none       &kp QMARK       &kp LBRC        &kp RBRC        &kp AMPS        &kp PIPE        &none
-            &none       &none       &none       &none       &none       &none       &kp EQUAL       &kp LPAR        &kp RPAR        &kp LBKT        &kp RBKT        &none
+            &none       &none       &none       &none       &none       &none       &kp EQUAL       &mt UNDER LPAR  &kmt MINUS RPAR &kp LBKT        &kp RBKT        &none
             &none       &none       &none       &none       &none       &none       &kp EXCL        &kp LT          &kp GT          &kp TILDE       &kp CARET       &none
             CL2         CL1         CL0         CR0         CR1         CR2
             >;
